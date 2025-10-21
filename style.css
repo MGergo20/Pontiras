@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+main{
+    background-color: rgb(63, 62, 62);
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+
+}
+h2{
+    font-size: 30px;
+    padding: 10px;
+    text-align: justify;
+}
+p{
+    font-size: 16px;
+    padding: 10px;
+    text-align: justify;
+}
+body{
+    background: url(kepek/hatterem3.jpg);
+    color: white;
+
+}
+header{
+    text-transform: uppercase;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+header h1{
+    border-bottom: 1px dotted grey;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 100px 100px;
+
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav li{
+    padding: 10px;
+    border-right: 1px solid grey;
+    text-align: center;
+}
+nav a:hover{
+    background-color: grey;
+}
+nav li:hover a{
+    color: black
+}
+img {
+  margin: 10px;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 1px dotted grey;
+  padding: 5px;
+}
+
+.kep_szoveg{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+
+footer{
+  text-align: center;
+  color: white;
+  border-top: 1px solid white;
+  padding: 10px;
+}
+@media (max-width: 600px) {
+  main {
+    width: 100%;
+  }
+
+  nav ul {
+    grid-template-columns: 1fr;
+  }
+
+  .kep_szoveg {
+    grid-template-columns: 1fr;
+  }
+
+  img {
+    max-width: 100%;
+    margin: 10px auto;
+  }
+  p{
+    padding: 10px;
+  }
+}
